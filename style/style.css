@@ -647,9 +647,7 @@ section{
     color: #323941;
     margin-top: 15px;
     width: 100%;
-    max-width: 468px;
-    margin: auto;
-    padding: 0px 10px;
+    max-width: 490px;
 }
 
 .content_p_nine{
@@ -723,6 +721,10 @@ section{
         display: inline-block;
         max-width: 100%;
         text-align: center;
+    }
+    .content_p_two{
+        margin: auto;
+        padding: 0px 10px;
     }
 }
 
