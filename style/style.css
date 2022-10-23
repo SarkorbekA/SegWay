@@ -548,6 +548,117 @@ main{
     padding: 3px;
 }
 
+/*     PLUS ACTIVE       */
+section{
+    margin-bottom: 50px;
+}
+
+.plus_active{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid rgb(241, 241, 241);  
+}
+
+.active_box{
+    display: flex;
+}
+
+.box_active{
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+}
+
+.box_active div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 12px 8px;
+}
+
+.box_active.active{
+    background: #009EFF;
+}
+
+.hide_img{
+    display: none;
+}
+.hide_img.active{
+    display: block;
+    margin-right: 5px;
+}
+
+.saw_img{
+    display: block;
+}
+.saw_img.active{
+    display: none;
+    margin-right: 5px;
+}
+
+.active_p{
+    font-weight: 400;
+    color:  #999;
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
+    max-width: 120px;
+}
+
+.active_p.active{
+    color: white;
+}
+
+.active_content{
+    background-color: rgb(231, 231, 231);
+}
+
+.content{
+    display: none;
+    padding: 20px 0px 10px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 95%;
+    margin: auto;
+    align-items: center;
+}
+
+.content.active{
+    display: flex;
+}
+
+.content_p_one{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #323941;
+    margin-bottom: 10px;
+}
+
+.content_p_two{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323941;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 468px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.content_p_nine{
+    max-width: 400px;
+}
+.content img{
+    height: 200px;
+}
+
 @media(max-width: 850px){
     .burger_bg{
         display: block;
@@ -603,6 +714,24 @@ main{
     }
 }
 
+@media (max-width:775px) {
+    .content{
+        margin: auto;
+        justify-content: center;
+    }
+    .content.active{
+        display: inline-block;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:735px) {
+    .active_p{
+        display: none;
+    }
+}
+
 @media(max-width: 500px){
     .ops div{
         width: 100px;
@@ -641,6 +770,9 @@ main{
     }
     .author_text{
         font-size: 12px;
+    }
+    .content_p_ten{
+        max-width: 270px;
     }
 }
 
@@ -705,6 +837,13 @@ main{
 }
 
 @media(max-width: 375px){
+    .content_p_one{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .content img{
+        height: 170px;
+    }
     .logo_menu{
         display: block;
     }
