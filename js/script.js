@@ -47,28 +47,24 @@ left.onclick = () => {
 };
 
 
-
-
-// const left_btn = document.querySelector('.btn_left')
-// const right_btn = document.querySelector('.btn_right')
-// const img = document.querySelectorAll('.slider div')
-// let i = 0;
-
-// right_btn.addEventListener('click' ,  function() {
-//     img[i].classList.remove('active');
-//     i++;
-//     if(i == img.length){
-//         i=0;
-//     }
-//     img[i].classList.add('active');
-// })
-
-// left_btn.addEventListener('click' , function() {
-//     img[i].classList.remove('active');
-//     i--;
-//     if(i < 0){
-//         i = img.length - 1;
-//     }
-//     img[i].classList.add('active');
-// })
-
+const link = document.querySelectorAll('.box_active');
+const img = document.querySelectorAll('.hide_img');
+const saw = document.querySelectorAll('.saw_img');
+const p = document.querySelectorAll('.box_active p')
+const content = document.querySelectorAll('.content')
+for(let i = 0; i < link.length; i++){
+    link[i].addEventListener('click', function() {
+        for(let ix = 0; ix < link.length; ix++){
+            link[ix].classList.remove('active');
+            saw[ix].classList.remove('active');
+            p[ix].classList.remove('active');
+            img[ix].classList.remove('active');
+            content[ix].classList.remove('active');
+        }
+        link[i].classList.add('active');
+        saw[i].classList.add('active');
+        p[i].classList.add('active');
+        img[i].classList.add('active');
+        content[i].classList.add('active');
+    });
+}
