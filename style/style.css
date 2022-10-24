@@ -717,7 +717,7 @@ section{
     line-height: 119.3%;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .acces_icon{
@@ -761,6 +761,8 @@ section{
     width: 100%;
     max-width: 33%;
     margin-bottom: 50px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 15px 5px;
 }
 
 .acces_pay{
@@ -826,7 +828,7 @@ section{
     }
 }
 
-@media(max-width:880px){
+@media(max-width:900px){
     .acces_boxes{
         display: flex;
         flex-wrap: nowrap;
@@ -835,6 +837,8 @@ section{
     .acces_box{
         margin: 5px;
         max-width: 100%;
+        background: rgb(248, 248, 248);
+        border: 1px solid #999;
     }
 }
 
