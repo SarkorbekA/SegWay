@@ -557,11 +557,13 @@ section{
     margin: auto;
     width: 100%;
     max-width: 1200px;
-    border: 1px solid rgb(241, 241, 241);  
+    background: linear-gradient(0deg, #EEEEEE 0%, rgba(245, 245, 245, 0.79) 43.81%, rgba(255, 255, 255, 0) 82.46%);
+    margin-bottom: 50px;
 }
 
 .active_box{
     display: flex;
+    border: 1px solid rgb(241, 241, 241);  
 }
 
 .box_active{
@@ -587,6 +589,7 @@ section{
 .hide_img{
     display: none;
 }
+
 .hide_img.active{
     display: block;
     margin-right: 5px;
@@ -595,6 +598,7 @@ section{
 .saw_img{
     display: block;
 }
+
 .saw_img.active{
     display: none;
     margin-right: 5px;
@@ -614,7 +618,8 @@ section{
 }
 
 .active_content{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(243, 243, 243);
+    margin-bottom: 30px;
 }
 
 .content{
@@ -653,8 +658,184 @@ section{
 .content_p_nine{
     max-width: 400px;
 }
+
 .content img{
     height: 200px;
+}
+
+.pack_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.pack_right{
+    display:flex;
+    justify-content: center;
+}
+
+.pack_position{
+    position: relative;
+    display: flex;
+}
+
+.pack_img{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    right: 0;
+}
+
+.pack_left img{
+    cursor: pointer;
+    width: 450px;
+}
+
+.pack_left h3{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 119.3%;
+    text-transform: uppercase;
+    color: #323941;
+    margin-bottom: 10px;
+}
+
+/*               acces_box             */
+
+.acces{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    color: #323941;
+}
+
+.acces_h3{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 119.3%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.acces_icon{
+    background-color: #EEEEEE;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acces_box_h3{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 23px;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 240px;
+    margin-bottom: 10px;
+}
+
+.acces_box_p{
+    width: 280px;
+    height: 65px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 119.3%;
+    text-align: center;
+    color: #999999;
+    margin: auto;
+}
+
+.acces_box{
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 33%;
+    margin-bottom: 50px;
+}
+
+.acces_pay{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 10px;    
+    margin-bottom: 10px;
+}
+
+.acces_buy{
+    font-weight: 400;
+    line-height: 119.3%;
+    font-size: 13px;
+    color: #C6C6C6;
+    padding: 15px;
+    margin: auto;
+    width: 140px;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.acces_buy:hover{
+    background-color: #009EFF;
+    color: white;
+}
+
+.acces_boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 99%;
+    margin: auto;
+}
+
+.acces_more{
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    padding: 15px 80px;
+    color: white;
+    width: max-content;
+    background: #009EFF;
+    cursor: pointer;
+}
+
+@media(max-width:1000px) {
+    .pack_box{
+        display: inline-block;
+        margin: auto;
+    }
+    .pack_left{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .pack_right{
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:880px){
+    .acces_boxes{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .acces_box{
+        margin: 5px;
+        max-width: 100%;
+    }
 }
 
 @media(max-width: 850px){
@@ -679,6 +860,10 @@ section{
 }
 
 @media (max-width:830px) {
+    .pack_left{
+        display: block;
+        text-align: center;
+    }
     .sec_con{
         display: block;
     }
@@ -728,6 +913,7 @@ section{
     }
 }
 
+
 @media (max-width:735px) {
     .active_p{
         display: none;
@@ -735,6 +921,22 @@ section{
 }
 
 @media(max-width: 500px){
+    .acces_h3{
+        font-size: 30px;
+    }
+    .pack_left h3{
+        font-size: 30px;
+    }
+    .pack_left img{
+        width: 330px;
+    }
+    .pack_img{
+        width: 330px;
+        left: -15px;
+    }
+    .pack_img_two{
+        width: 300px;
+    }
     .ops div{
         width: 100px;
         height: 125px;
@@ -822,6 +1024,19 @@ section{
 }
 
 @media (max-width:400px) {
+    .pack_left h3{
+        font-size: 24px;
+    }
+    .pack_left img{
+        width: 230px;
+    }
+    .pack_img{
+        width: 220px;
+        left: -10px;
+    }
+    .pack_img_two{
+        width: 200px;
+    }
     .third_span{
         font-size: 14px;
     }
