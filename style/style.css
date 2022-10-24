@@ -762,7 +762,7 @@ section{
     max-width: 33%;
     margin-bottom: 50px;
     border: 1px solid rgb(212, 212, 212);
-    padding: 15px 5px;
+    padding: 25px 5px;
 }
 
 .acces_pay{
@@ -811,6 +811,72 @@ section{
     cursor: pointer;
 }
 
+.img_sec{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.img_gradient{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    bottom: 0;
+    background: linear-gradient(360deg, #F5F5F5 19.44%, rgba(232, 232, 232, 0) 100%);
+}
+
+.sec_img{
+    width: 100%;
+}
+
+.sec_img_two{
+    display: none;
+}
+
+.feat_box{
+    text-align: center;
+    width: 100%;
+    max-width: 25%;
+    margin-bottom: 35px;
+}
+
+.feat_box h3{
+    font-weight: 300;
+    color: #009EFF;
+    font-size: 28px;
+}
+
+.feat_box img{
+    width: 90px;
+}
+
+.feat_box p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+}
+
+.feat_boxes{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.feat_h3{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 119.3%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 @media(max-width:1000px) {
     .pack_box{
         display: inline-block;
@@ -839,6 +905,9 @@ section{
         max-width: 100%;
         background: rgb(248, 248, 248);
         border: 1px solid #999;
+    }
+    .acces_more{
+        margin-top: 50px;
     }
 }
 
@@ -921,6 +990,35 @@ section{
 @media (max-width:735px) {
     .active_p{
         display: none;
+    }
+}
+
+@media (max-width:560px) {
+    .acces_more{
+        padding: 10px 45px;
+        font-size: 15px;
+    }
+    .sec_img_two{
+        display: block;
+        width: 100%;
+    }
+    .sec_img{
+        display: none;
+    }
+    .feat_box img{
+        width: 55px;
+    }
+    .feat_box{
+        margin-bottom: 25px;
+    }
+    .feat_box h3{
+        font-size: 19px;
+    }
+    .feat_box p{
+        font-size: 11px;
+    }
+    .feat_h3{
+        font-size: 30px;
     }
 }
 
@@ -1058,6 +1156,22 @@ section{
 }
 
 @media(max-width: 375px){
+    .feat_h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .feat_box img{
+        width: 35px;
+    }
+    .feat_box{
+        margin-bottom: 15px;
+    }
+    .feat_box h3{
+        font-size: 15px;
+    }
+    .feat_box p{
+        font-size: 8px;
+    }
     .content_p_one{
         font-size: 20px;
         line-height: 25px;
