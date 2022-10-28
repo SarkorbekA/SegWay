@@ -1165,11 +1165,34 @@ body.active{
 
 .images_sec_four{
     background: #E5E5E5;
+}
+
+.images_con_four{
+    text-align: center;
     margin: auto;
     width: 100%;
     max-width: 1000px;
+    padding: 50px 10px;
 }
 
+.images_con_four h3{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 119.3%;
+    text-transform: uppercase;
+}
+
+.images_con_four p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+.images_con_four img{
+    max-width: 100%;
+    width: 199%;
+}
 @media(max-width:1015px) {
     .images_sec_two{
         display: block;
@@ -1299,6 +1322,12 @@ body.active{
 }
 
 @media (max-width:775px) {
+    .images_con_four p{
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
     .fot_con{
         display: block;
         text-align: center;
@@ -1403,6 +1432,9 @@ body.active{
 }
 
 @media(max-width: 500px){
+    .images_con_four h3{
+        font-size: 30px;
+    }
     .overview_img_one{
         display: none;
     }
