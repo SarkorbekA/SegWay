@@ -1082,9 +1082,13 @@ body.active{
 .img_text_block p{
     font-weight: 400;
     font-size: 18px;
-    line-height: 22px;
     color: #FFFFFF;
     margin-top: 15px;
+}
+
+.images_span{
+    font-size: 13px;
+    color: gray;
 }
 
 .img_text_block{
@@ -1095,13 +1099,17 @@ body.active{
 }
 
 .images_sec{
-    background: #0a0e19;
+    background: #12161f;
     display: flex;
     width: 100%;
     max-width: 1500px;
     padding: 150px 140px;
     margin: auto;
     position: relative;
+}
+
+.images_sec_three{
+    background: black;
 }
 
 .images_sec img{
@@ -1339,7 +1347,11 @@ body.active{
     }
     .img_text_block{
         padding: 0px 10px;
-        box-shadow: 0px 26px 30px 37px rgba(10, 14, 25, 1);    }
+        box-shadow: 0px 10px 30px 37px #111520;   
+    }
+    .shadow{
+        box-shadow: 0px 10px 30px 37px black;   
+    }
 
     .images_sec{
         display: block;
