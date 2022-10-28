@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 | Sarkor</title>
+    <link rel="stylesheet" href="js/jquery.js">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
@@ -14,11 +15,11 @@
                 <div class="menu_box">
                     <div class="box_menu">
                         <div class="box_nav">
-                            <a class="nav_a" href="">REVIEWS</a>
-                            <a class="nav_a" href="">SHIPPING AND PAYMENT</a>
-                            <a class="nav_a" href="">WHOLESALE</a>
-                            <a class="nav_a" href="">BLOG</a>
-                            <a class="nav_a" href="">CONTACTS</a>
+                            <a class="nav_a" href="#sec_con">REVIEWS</a>
+                            <a class="nav_a" href="#plus_active">SHIPPING AND PAYMENT</a>
+                            <a class="nav_a" href="#acces">ACCESSORIES</a>
+                            <a class="nav_a" href="#features">FEATURES</a>
+                            <a class="nav_a" href="#fot">CONTACTS</a>
                         </div>
                         <div class="drop_down">
                             <div onclick="myFunction()" class="burger_bg">
@@ -27,11 +28,11 @@
                                 </button>
                             </div>
                             <div id="myDropdown" class="dropdown-content">
-                                <a href="#">REVIEWS</a>
-                                <a href="#">SHIPPING AND PAYMENT</a>
-                                <a href="#">WHOLESALE</a>
-                                <a href="#">BLOG</a>
-                                <a href="#">CONTACTS</a>
+                                <a href="#sec_con">REVIEWS</a>
+                                <a href="#plus_active">SHIPPING AND PAYMENT</a>
+                                <a href="#acces">ACCESSORIES</a>
+                                <a href="#features">FEATURES</a>
+                                <a href="#fot">CONTACTS</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +60,7 @@
                             <img class="logo_author_img" src="images/Ellipse 1.png" alt="">
                             <div class="author_text">
                                 <p class="author_text_h4">JOHN SMITH</p>
-                                <a class="author_text_a" href="">Ask a question 
+                                <a class="author_text_a">Ask a question 
                                     to the director</a>
                             </div>
                         </div>
@@ -95,7 +96,7 @@
         <div class="blue">
             <h3 class="blue_h3">Free 1 day shipping within California.</h3>
         </div>
-        <div class="sec_con">
+        <div class="sec_con" id="sec_con">
             <div class="left_box">
                 <div class="first_box">
                     <h3>In stock</h3>
@@ -160,7 +161,7 @@
         </div>
     </section>
     <section>
-        <div class="plus_active">
+        <div class="plus_active" id="plus_active">
             <div class="active_box">
                 <div class="box_active active">
                     <div class="">
@@ -235,7 +236,7 @@
 
             </div>
         </div>
-        <div class="acces">
+        <div class="acces" id="acces">
             <h3 class="acces_h3">Accessories</h3>
             <div class="acces_boxes">
                 <div class="acces_box">
@@ -329,7 +330,7 @@
         <div class="img_gradient"></div>
     </div>
     <section>
-        <div class="acces">
+        <div class="acces" id="features">
             <div class="feat_h3">IMPRESSIVE FEATURES</div>
             <div class="feat_boxes">
                 <div class="feat_box">
@@ -374,8 +375,73 @@
                 </div>
             </div>
         </div>
+        <div class="acces">
+            <div class="overview">
+                <h3 class="overview_h3">KickScooter overview</h3>
+                <p class="overview_p">SEGWAY Ninebot Kickscooter MAX</p>
+                <img class="overview_img_one" src="images/overview.png" alt="">
+                <div class="overview_img">
+                    <img src="images/overview_img.png" alt="">
+                    <div class="overview_img_p"><p> 1. Electronic Throttle <br>
+                        2. Bell <br>
+                        3. Brake Lewer <br>
+                        4. Headlight <br>
+                        5. Quick Release Lever <br>
+                        6. Folding Mechanism <br>
+                        7. Front Fork <br>
+                        8. Drum Brake <br>
+                        9. Dashboard & Power Button <br>
+                        </p><p>
+                        10. Stem <br>
+                        11. Battery Compartment <br>
+                        12. Charge Port <br>
+                        13. Kickstand <br>
+                        14. Buckle <br> 
+                        15. Rear Fender <br> 
+                        16. Brake Light <br>
+                        17. Hub Motor
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <div class="images_sec">
+        <div class="img_text_block">
+            <h3>Smart battery
+                Management system
+                (Smart-BMS)</h3>
+            <p>The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery durability</p>
+        </div>
+        <img src="images/img_sec/images_sec.png" alt="">
+    </div>
+    <footer id="fot">
+        <div class="fot_con">
+            <img src="images/segway_icon.png" alt="">
+            <div class="fot_block">
+                <p>Segway  California © 2017</p>
+                <p>2637 Fairfax Ave
+                    Culver City, CA 90232</p>
+                <p>+1 (888) 777-77-77</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
+<div class="buy_scene">
+    <div class="reg_box">
+        <div class="reg_con">
+            <h3 class="reg_h3">Не шашли, <br> что искали?</h3>
+            <p class="reg_p">оставьте номер телефона, и наш менеджер
+                перезвонит вам через 15 секунд</p>
+                <input placeholder="+7 (___) ___-__-__" type="number" name="telefon" id="input_tel">
+            <button type="submit" class="registerbtn">Готово</button>
+        </div>
+        <a class="reg_back" href="#">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+    </div>
+</div>
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 </html>
