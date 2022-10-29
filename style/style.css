@@ -956,6 +956,7 @@ footer{
     font-weight: 400;
     font-size: 13px;
     line-height: 119.3%;
+    cursor: context-menu;
 }
 
 .fot_block p:hover{
@@ -1107,9 +1108,12 @@ body.active{
     margin: auto;
     position: relative;
 }
+.images_sec_bg{
+    background: #12161f;
+}
 
 .images_sec_three{
-    background: black !important; 
+    background: black; 
 }
 
 .images_sec img{
@@ -1120,8 +1124,12 @@ body.active{
     top: 0;
 }
 
+.img_new{
+    display: none;
+}
+
 .images_sec_two{
-    background: #E5E5E5;
+    background: white;
     display: flex;
     width: 100%;
     height: 537px;
@@ -1129,7 +1137,13 @@ body.active{
     padding: 150px 0px;
     margin: auto;
     position: relative;
+    justify-content: space-evenly;
 }
+
+.img_sec_around{
+    max-width: 1200px;
+}
+
 
 .images_sec_two img{
     position: absolute;
@@ -1164,7 +1178,7 @@ body.active{
 }
 
 .images_sec_four{
-    background: #E5E5E5;
+    background: white;
 }
 
 .images_con_four{
@@ -1395,6 +1409,13 @@ body.active{
     .images_sec img{
         position: static;
         width: 100%;
+    }
+    .img_new_first{
+        display: none;
+    }
+    .img_new{
+        display: block;
+        height: 500px;
     }
     .acces_more{
         padding: 10px 45px;
