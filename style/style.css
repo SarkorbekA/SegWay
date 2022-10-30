@@ -87,6 +87,27 @@ body::-webkit-scrollbar-thumb:hover {
     line-height: 22px;
 }
 
+.icons_basket{
+    position: relative;
+    cursor: pointer;
+}
+
+.icons_basket_span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -4px;
+    left: 16px;
+    font-size: 10px;
+    background: #009eff;
+    padding: 3px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 13px;
+    height: 13px;
+}
+
 .icons_p{
     color: white;
 }
@@ -750,6 +771,10 @@ section{
     margin-bottom: 10px;
 }
 
+.box_h3_width{
+    max-width: 300px;
+}
+
 .acces_box_p{
     width: 280px;
     height: 65px;
@@ -780,7 +805,7 @@ section{
     margin-bottom: 10px;
 }
 
-.acces_buy{
+/* .acces_buy{
     font-weight: 400;
     line-height: 119.3%;
     font-size: 13px;
@@ -795,7 +820,7 @@ section{
 .acces_buy:hover{
     background-color: #009EFF;
     color: white;
-}
+} */
 
 .acces_boxes{
     display: flex;
@@ -807,14 +832,20 @@ section{
 }
 
 .acces_more{
-    text-align: center;
+    border-radius: 16px;
+    display: flex;
     margin: auto;
     font-size: 18px;
     padding: 15px 80px;
     color: white;
+    border: none;
     width: max-content;
-    background: #009EFF;
+    background: gray;
     cursor: pointer;
+}
+
+.acces_more:hover{
+    background: #009EFF;
 }
 
 .img_sec{
@@ -965,6 +996,10 @@ footer{
 
 /*      active window      */
 
+.reg_con::-webkit-scrollbar{
+    width: 0px;
+}
+
 .buy_scene{
     position: fixed;
     width: 100%;
@@ -976,13 +1011,16 @@ footer{
     display: none;
     align-items: center;
     justify-content: center;
+    padding: 0px 20px;
 }
 
 .reg_con{
-    max-width: 700px;
-    border: 10px solid #009EFF;
+    max-width: 600px;
+    border: 5px solid #009EFF;
+    overflow-y: scroll;
     width: 100%;
-    height: 300px;
+    border-radius: 15px;
+    height: 50%;
     padding: 15px;
     background: #323941;
     text-align: center;
@@ -1008,6 +1046,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     width: 40px;
     height: 40px;
     background: #009EFF;
@@ -1015,7 +1054,7 @@ footer{
 }
 
 .reg_back i{
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
 
@@ -1030,12 +1069,13 @@ footer{
 .registerbtn {
     background-color: #009EFF;
     color: white;
-    padding: 16px 20px;
+    padding: 12px 0px;
     border: none;
     cursor: pointer;
     width: 100%;
-    max-width: 90%;
+    max-width: 65%;
     opacity: 0.9;
+    border-radius: 10px;
 }
 
 .registerbtn:hover {
@@ -1050,16 +1090,17 @@ input::placeholder{
 input{
     text-align: center;
     letter-spacing: 2px;
+    border-radius: 10px;
 }
 
 #input_tel[type=number] {
-    padding: 15px 5px;
+    padding: 10px 0px;
     background: none;
     border: none;
     width: 70%;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: 1px solid red;
+    border: 1px solid rgb(177, 177, 177);
     font-size: 18px;
 }
 
@@ -1205,8 +1246,160 @@ body.active{
 
 .images_con_four img{
     max-width: 100%;
-    width: 199%;
+    width: 100%;
 }
+
+
+/*     RECEIPT     */
+
+.main__product-number {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main__product-btn {
+    padding: 5px 15px;
+    background: gray; 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__product-btn:hover {
+    background: #009EFF; 
+}
+
+.main__product-num {
+    margin: 0 10px;
+    width: 80px;
+    border: 1px solid #d7d8db;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.main__product-price {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.receipt {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background: rgba(0, 0, 0, 0.274);
+    display: none;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.receipt_top{
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.receipt_back{
+    background: rgb(209, 209, 209);
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.receipt_back:hover{
+    background: rgb(170, 170, 170);
+}
+
+.receipt.active .receipt__window{
+    width: 80%;
+    max-width: 600px;
+    min-height: 60%;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    top: -100%;
+    position: absolute;
+}
+
+.receipt__window-out {
+    flex-grow: 1;
+    align-self: stretch;
+    padding: 15px;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+    height: 30px;
+    border: 1px solid #e2e2e2;
+    background: rgb(219, 219, 219);
+}
+
+.color_js{
+    color:#009EFF;
+    margin-bottom: 8px;
+}
+.color_js_two{
+    color:#009EFF;
+    margin-bottom: -25px;
+}
+
+.receipt__window-out::-webkit-scrollbar{
+    width: 1px;
+}
+.receipt__window-out::-webkit-scrollbar-track {
+    background: #323941;
+}
+
+.receipt__window-out::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.receipt__window-out::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.receipt__window-btn {
+    padding:10px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background: gray;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.receipt__window-title {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
 @media(max-width:1015px) {
     .images_sec_two{
         display: block;
@@ -1453,6 +1646,14 @@ body.active{
 }
 
 @media(max-width: 500px){
+    .reg_back{
+        width: 33px;
+        height: 33px;
+    }
+    .reg_back i{
+        font-size: 20px;
+        color: white;
+    }
     .images_con_four h3{
         font-size: 30px;
     }
@@ -1525,6 +1726,9 @@ body.active{
     input::placeholder{
         font-size: 12px;
     }
+    .reg_con{
+        height: 45%;
+    }
     input{
         letter-spacing: 1px;
     }
@@ -1538,6 +1742,10 @@ body.active{
         font-weight: 400;
         font-size: 12px;
         max-width: 300px;
+    }
+    .registerbtn{
+        padding: 8px 0px;
+        max-width: 50%;
     }
     .first_box p{
         font-size: 30px;
@@ -1582,6 +1790,10 @@ body.active{
 }
 
 @media (max-width:450px) {
+    .receipt.active .receipt__window{
+        width: 95%;
+        min-height: 50%;
+    }
     .img_text_block h3{
         font-size: 20px;
         max-width: 250px;
@@ -1636,6 +1848,16 @@ body.active{
 }
 
 @media(max-width: 375px){
+    .reg_con{
+        height: 35vh;
+        border: 2px solid #009EFF;
+    }
+    .reg_h3{
+        font-size: 20px;
+    }
+    .reg_p{
+        font-size: 9px;
+    }
     input::placeholder{
         font-size: 10px;
     }
