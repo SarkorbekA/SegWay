@@ -1016,11 +1016,13 @@ footer{
 
 .reg_con{
     max-width: 600px;
-    border: 5px solid #009EFF;
+    border: 2px solid #009EFF;
     overflow-y: scroll;
     width: 100%;
-    border-radius: 15px;
-    height: 50%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 65%;
     padding: 15px;
     background: #323941;
     text-align: center;
@@ -1030,16 +1032,17 @@ footer{
 .reg_h3{
     font-weight: 700;
     font-size: 45px;
+    margin-top: 30px;
 }
 
 .reg_p{
     font-weight: 400;
     font-size: 16px;
     width: 100%;
-    max-width: 400px; 
+    max-width: 350px; 
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .reg_back{
@@ -1048,7 +1051,7 @@ footer{
     align-items: center;
     border-radius: 10px;
     width: 40px;
-    height: 40px;
+    height: 35px;
     background: #009EFF;
     margin-left: 5px;
 }
@@ -1076,6 +1079,7 @@ footer{
     max-width: 65%;
     opacity: 0.9;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .registerbtn:hover {
@@ -1646,13 +1650,8 @@ body.active{
 }
 
 @media(max-width: 500px){
-    .reg_back{
-        width: 33px;
-        height: 33px;
-    }
-    .reg_back i{
-        font-size: 20px;
-        color: white;
+    .reg_con{
+        height: 50%;
     }
     .images_con_four h3{
         font-size: 30px;
@@ -1725,9 +1724,6 @@ body.active{
 @media (max-width:485px) {
     input::placeholder{
         font-size: 12px;
-    }
-    .reg_con{
-        height: 45%;
     }
     input{
         letter-spacing: 1px;
@@ -1818,6 +1814,9 @@ body.active{
 }
 
 @media (max-width:400px) {
+    .buy_scene{
+        padding: 0px;
+    }
     .pack_left h3{
         font-size: 24px;
     }
@@ -1849,14 +1848,14 @@ body.active{
 
 @media(max-width: 375px){
     .reg_con{
-        height: 35vh;
         border: 2px solid #009EFF;
+        height: 40%;
     }
     .reg_h3{
         font-size: 20px;
     }
     .reg_p{
-        font-size: 9px;
+        font-size: 10px;
     }
     input::placeholder{
         font-size: 10px;
@@ -1915,6 +1914,9 @@ body.active{
 }
 
 @media(max-width: 315px){
+    .reg_con{
+        height: 35%;
+    }
     .second_box{
         width: 200px;
         height: 300px;
