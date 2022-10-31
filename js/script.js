@@ -4,24 +4,23 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("s_show");
     document.querySelector('.burger_bg').classList.toggle('active')
     document.querySelector('.button_btn').classList.toggle('active')
-    body.classList.toggle('active')
 }
 
-  function filterFunction() {
+function filterFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
     div = document.getElementById("myDropdown");
     a = div.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-      txtValue = a[i].textContent || a[i].innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        a[i].style.display = "";
-      } else {
-        a[i].style.display = "none";
-      }
+        for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                a[i].style.display = "";
+            } else {
+            a[i].style.display = "none";
+        }
     }
-  }
+}
 
 
 
