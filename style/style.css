@@ -28,6 +28,9 @@ h3{
 .s_nav{
     width: 100%;
     background: #323941;
+    position: fixed;
+    z-index: 10;
+    top: 0;
 }
 
 .s_header{
@@ -252,6 +255,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-width: 1300px;
     width: 100%;
     margin: auto;
+    margin-top: 62px;
 }
 
 .author_text{
@@ -1016,7 +1020,7 @@ footer{
 
 .reg_con{
     max-width: 600px;
-    border: 2px solid #009EFF;
+    border: 2px solid #009eff;
     overflow-y: scroll;
     width: 100%;
     border-bottom-left-radius: 15px;
@@ -1024,7 +1028,7 @@ footer{
     border-top-right-radius: 15px;
     height: 65%;
     padding: 15px;
-    background: #323941;
+    background: #4e4e4e;
     text-align: center;
     color: white;
 }
@@ -1032,7 +1036,7 @@ footer{
 .reg_h3{
     font-weight: 700;
     font-size: 45px;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .reg_p{
@@ -1052,7 +1056,7 @@ footer{
     border-radius: 10px;
     width: 40px;
     height: 35px;
-    background: #009EFF;
+    background: gray;
     margin-left: 5px;
 }
 
@@ -1070,7 +1074,7 @@ footer{
 }
 
 .registerbtn {
-    background-color: #009EFF;
+    background-color: gray;
     color: white;
     padding: 12px 0px;
     border: none;
@@ -1084,6 +1088,7 @@ footer{
 
 .registerbtn:hover {
     opacity: 1;
+    background: #009eff;
 }
 
 input::placeholder{
@@ -1104,7 +1109,7 @@ input{
     width: 70%;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: 1px solid rgb(177, 177, 177);
+    border-bottom: 1px solid rgb(177, 177, 177);
     font-size: 18px;
 }
 
@@ -1404,6 +1409,97 @@ body.active{
     margin: 10px 0;
 }
 
+.download{
+    width: 100%;
+    background: #F5F5F5;
+    padding: 100px 40px;
+}
+
+.download_con{
+    display: flex;
+    width: 100%;
+    max-width: 810px;
+    justify-content: space-between;
+    margin: auto;
+    border: 4px solid #009EFF;
+    height: 300px;
+    background: white;
+}
+
+.dwn_right h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 119.3%;
+    text-transform: uppercase;
+    color: #323941;
+}
+
+.dwn_img{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dwn_img img{
+    width: 100%;
+    position: absolute;
+    top: -45px ;
+    left: -50px;
+}
+
+.dwn_right{
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.dwn_parametr{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    flex-wrap: wrap;
+}
+
+.dwn_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.dwn_box p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 119.3%;
+    color: #323941;
+    width: max-content;
+    margin-left: 10px;
+}
+
+.dwn_btn{
+    background: #009EFF;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 9px 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.dwn_btn p{
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
 @media(max-width:1015px) {
     .images_sec_two{
         display: block;
@@ -1482,6 +1578,7 @@ body.active{
     }
     .phone_icon{
         display: block;
+        cursor: pointer;
     }
     .icons_p{
         display: none;
@@ -1492,6 +1589,9 @@ body.active{
 }
 
 @media (max-width:830px) {
+    .reg_con{
+        height: 80%;
+    }
     .images_sec{
         padding: 150px 50px;
     }
@@ -1652,6 +1752,9 @@ body.active{
 @media(max-width: 500px){
     .reg_con{
         height: 50%;
+    }
+    .reg_h3{
+        margin-top: 30px;
     }
     .images_con_four h3{
         font-size: 30px;
