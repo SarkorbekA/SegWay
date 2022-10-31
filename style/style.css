@@ -1717,6 +1717,10 @@ body.active{
         margin-top: 20px;
         margin-bottom: 10px;
     }
+    .dwn_img img{
+        left: 0;
+        top: -40px;
+    }
     .dwn_flex{
         width: 100%;
         display: flex;
@@ -1934,6 +1938,12 @@ body.active{
 }
 
 @media (max-width:450px) {
+    .dwn_img img{
+        width: 250px;
+    }
+    .dwn_flex{
+        margin-top: -30px;
+    }
     .receipt.active .receipt__window{
         width: 95%;
         min-height: 50%;
@@ -1995,6 +2005,18 @@ body.active{
 }
 
 @media(max-width: 375px){
+    .dwn_right h3{
+        font-size: 20px;
+    }
+    .dwn_btn{
+        padding: 6px 10px;
+    }
+    .dwn_img img{
+        width: 200px;
+    }
+    .dwn_box{
+        margin-top: 10px;
+    }
     .reg_con{
         border: 2px solid #009EFF;
         height: 40%;
