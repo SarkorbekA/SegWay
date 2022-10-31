@@ -190,18 +190,14 @@ function PluseOrMinus(element) {
     let parentID = element.closest('.main__product').getAttribute('id');
     let out = element.closest('.main__product').querySelector('.main__product-num');
     let price = element.closest('.main__product').querySelector('.main__product-price span');
-    // let basket = element.closest('main__product_two').querySelector('.icons_basket_span');
 if (element.getAttribute('data-symbol') == '+' && product[parentID].amount < 3) {
     product[parentID].amount++;
-    // product[parentID].basket++;
 }
 else if(element.getAttribute('data-symbol') == '-' && product[parentID].amount > 0) {
     product[parentID].amount--;
-    // product[parentID].basket--;
 }
 out.innerHTML = product[parentID].amount;
 price.innerHTML = product[parentID].summ;
-// basket.innerHTML = product[parentID].basket;
 }
 
 
