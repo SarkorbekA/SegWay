@@ -1435,18 +1435,18 @@ body.active{
 }
 
 .dwn_img{
-    width: 380px;
+    /* width: 560px; */
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    justify-content: center;
 }
 
 .dwn_img img{
-    width: 100%;
+    width: 330px;
     position: absolute;
-    top: -45px ;
+    /* top: -45px ; */
     left: -50px;
+    position: relative;
 }
 
 .dwn_right{
