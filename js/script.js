@@ -185,22 +185,27 @@ for (let i = 0; i < btnPluseOrMinus.length; i++){
         PluseOrMinus(this)
     })
 }
+
+let lengthBusket = document.querySelector(".icons_basket_span")
+let addLength = 0
+
 function PluseOrMinus(element) {
     let parentID = element.closest('.main__product').getAttribute('id');
     let out = element.closest('.main__product').querySelector('.main__product-num');
     let price = element.closest('.main__product').querySelector('.main__product-price span');
-if (element.getAttribute('data-symbol') == '+' && product[parentID].amount < 3) {
-    product[parentID].amount++;
+    
+    lengthBusket.textContent = +addLength
+    if (element.getAttribute('data-symbol') == '+' && product[parentID].amount < 4) {
+        product[parentID].amount++;
+        addLength++
+        lengthBusket.textContent = +addLength
+    }
+    else if(element.getAttribute('data-symbol') == '-' && product[parentID].amount > 0) {
+        product[parentID].amount--;
+    }
+    out.innerHTML = product[parentID].amount;
+    price.innerHTML = product[parentID].summ;
 }
-else if(element.getAttribute('data-symbol') == '-' && product[parentID].amount > 0) {
-    product[parentID].amount--;
-}
-out.innerHTML = product[parentID].amount;
-price.innerHTML = product[parentID].summ;
-}
-
-
-
 
 
 const receipt = document.querySelector('.receipt');
@@ -258,17 +263,6 @@ function refreshPage(){
 //   body.classList.remove('active')
 //   receipt.style.display = 'none';
 // })
-
-
-
-
-
-
-
-
-
-
-
 
 
 
