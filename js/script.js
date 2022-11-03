@@ -76,13 +76,13 @@ const wrap = document.querySelector('.buy_scene')
 const back = document.querySelector('.reg_back')
 
 wrap_btn.addEventListener('click' , function() {
-  wrap.style.display = 'flex'
-  body.classList.add('active')
+    wrap.style.display = 'flex'
+    body.classList.add('active')
 })
 
 back.addEventListener('click' , function(){
-  wrap.style.display = 'none'
-  body.classList.remove('active')
+    wrap.style.display = 'none'
+    body.classList.remove('active')
 })
 
 
@@ -251,47 +251,40 @@ addCart.addEventListener('click', function() {
 const backto = document.querySelector('.receipt_back')
 
 backto.addEventListener('click' , function() {
-  body.classList.remove('active')
-  receipt.style.display = 'none';
+    body.classList.remove('active')
+    receipt.style.display = 'none';
 })
 
 function refreshPage(){
-  window.location.reload();
+    window.location.reload();
+};
+
+
+
+// slider
+
+const left_s = document.querySelector('.btn_left')
+const right_s = document.querySelector('.btn_right')
+const imga = document.querySelectorAll('.block_img')
+let s = 0;
+
+right_s.addEventListener('click' ,  function() {
+    imga[s].classList.remove('active');
+    s++;
+    if(s == imga.length){
+        s=0;
+    }
+    imga[s].classList.add('active');
 } 
-// const backt = document.querySelector('.receipt')
-// backt.addEventListener('click' , function() {
-//   body.classList.remove('active')
-//   receipt.style.display = 'none';
-// })
+)
+left_s.addEventListener('click' , function() {
+    imga[s].classList.remove('active');
+    s--;
+    if(s < 0){
+        s = imga.length - 1;
+    }
+    imga[s].classList.add('active');
+})
 
 
-
-
-
-
-
-
-
-// const left_btn = document.querySelector('.btn_left')
-// const right_btn = document.querySelector('.btn_right')
-// const img = document.querySelectorAll('.slider div')
-// let i = 0;
-
-// right_btn.addEventListener('click' ,  function() {
-//     img[i].classList.remove('active');
-//     i++;
-//     if(i == img.length){
-//         i=0;
-//     }
-//     img[i].classList.add('active');
-// })
-
-// left_btn.addEventListener('click' , function() {
-//     img[i].classList.remove('active');
-//     i--;
-//     if(i < 0){
-//         i = img.length - 1;
-//     }
-//     img[i].classList.add('active');
-// })
 
