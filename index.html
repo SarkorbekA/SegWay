@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 | Sarkor</title>
-    <link rel="stylesheet" href="js/jquery.js">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
@@ -370,9 +369,6 @@
                     <div class="main__product-price"><span>0</span>$</div>
                 </div>
             </div>
-            <!-- <button class="addCart acces_more" type="reset">
-                $ Заказать
-            </button> -->
         </div>
     </section>
     <div class="img_sec">
@@ -565,6 +561,15 @@
             </div>
         </div>
     </div>
+    <div class="slider_bg">
+        <div class="slider_con">
+            <div class="block_img active" ><img src="images/slider/5.png" alt=""></div>
+            <div class="block_img" ><img src="images/slider/6.png" alt=""></div>
+            <div class="block_img" ><img src="images/slider/7.png" alt=""></div>
+                <div class=" btn_left">&#10094;</div>
+                <div class=" btn_right">&#10095;</div>
+        </div>
+    </div>
     <footer id="fot">
         <div class="fot_con">
             <img src="images/segway_icon.png" alt="">
@@ -592,11 +597,11 @@
         </a>
     </div>
 </div>
-<div class="receipt active"> <!-- Чек -->
+<div class="receipt active">
     <div class="receipt__window">
         <div class="receipt_top">
             <h2 class="receipt__window-title">SEGWAY</h2>
-            <a class="receipt_back" onClick="refreshPage()">
+            <a class="receipt_back">
                 <i class="fa-solid fa-xmark"></i>
             </a>
         </div>
@@ -604,6 +609,5 @@
         <button class="receipt__window-btn" onClick="refreshPage()">Оплатить</button> 
     </div>
 </div>
-<script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 </html>
