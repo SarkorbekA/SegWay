@@ -1505,6 +1505,76 @@ body.active{
 }
 
 
+/*   slider   */
+
+.slider_bg{
+    background: #F5F5F5;
+    border-top: 1px solid rgba(128, 128, 128, 0.699);
+}
+
+.slider_con{
+    position: relative;
+    margin: auto;
+    max-width: 500px;
+}
+
+.block_img{
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    transition: 1s;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.block_img.active{
+    display: block;
+}
+
+.block_img img{
+    width: 100%;
+}
+
+.btn_left , .btn_right{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.btn_left:hover, .btn_right:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.btn_right{
+    right: 0px;
+}
+
+.slider_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 @media(max-width:1015px) {
     .images_sec_two{
         display: block;
