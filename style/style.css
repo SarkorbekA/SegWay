@@ -1570,6 +1570,66 @@ body.active{
     z-index: 1;
 }
 
+.phone_sec{
+    color: #323941;
+    padding: 50px 0px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.phone_sec h3{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 119.3%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.phone_sec p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 660px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.phone_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.phone_img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 380px;
+    justify-content: space-around;
+}
+
+.phone_img img{
+    width: 110px;
+    height: 135px;
+    margin: 8px;
+}
+
+.phone_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 90%;
+    margin-top: 8px;
+}
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -1742,6 +1802,20 @@ body.active{
     .content_p_two{
         margin: auto;
         padding: 0px 10px;
+    }
+}
+
+@media (max-width:750px) {
+    .phone_box{
+        display: block;
+        text-align: center;
+    }
+    .phone_img{
+        margin: auto;
+        width: 100%;
+    }
+    .phone_img img{
+        margin: 5px 20px;
     }
 }
 
@@ -1941,6 +2015,12 @@ body.active{
     .content_p_ten{
         max-width: 270px;
     }
+    .phone_img img{
+        margin: 5px 0px;
+    }
+    .phone_sec h3{
+        font-size: 30px;
+    }
 }
 
 @media (max-width:485px) {
@@ -2075,6 +2155,22 @@ body.active{
 }
 
 @media(max-width: 375px){
+    .phone_sec h3{
+        font-size: 20px;
+    }
+    .phone_img img{
+        width: 70px;
+        height: 80px;
+        margin: 8px;
+    }
+    .phone_sec p{
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .phone_right img{
+        width: 100%;
+    }
     .dwn_right h3{
         font-size: 20px;
     }
