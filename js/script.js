@@ -202,6 +202,8 @@ function PluseOrMinus(element) {
     }
     else if(element.getAttribute('data-symbol') == '-' && product[parentID].amount > 0) {
         product[parentID].amount--;
+        addLength--
+        lengthBusket.textContent = +addLength
     }
     out.innerHTML = product[parentID].amount;
     price.innerHTML = product[parentID].summ;
@@ -285,6 +287,3 @@ left_s.addEventListener('click' , function() {
     }
     imga[s].classList.add('active');
 })
-
-
-
